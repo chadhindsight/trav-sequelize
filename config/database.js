@@ -1,9 +1,9 @@
 const Sequelize = require('sequelize');
-const dotenv = require('dotenv');
+// const dotenv = require('dotenv');
 
-dotenv.config();
+// dotenv.config();
 
-module.exports = new Sequelize(process.env.DATABASE_URL, {
+module.exports = new Sequelize('codegig', 'postgres', 'password', {
     host: 'localhost',
     dialect: 'postgres',
     operatorsAliases: false,
