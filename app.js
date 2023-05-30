@@ -1,5 +1,4 @@
 const express = require('express');
-const exphbs = require('express-handlebars');
 const bodyParser = require('body-parser');
 const path = require('path');
 
@@ -16,6 +15,9 @@ const app = express();
 app.get('/', (req, res) => {
     res.send('GRASS')
 })
+
+// Use the Gigs related routing
+app.use('/gigs', require('./routes/gigs'));
 
 const PORT = process.env.PORT || 5001;
 
