@@ -3,7 +3,7 @@ const Sequelize = require('sequelize');
 
 // dotenv.config();
 
-module.exports = new Sequelize('codegig', 'postgres', 'password', {
+module.exports = new Sequelize('codegig', 'me', 'password', {
     host: 'localhost',
     dialect: 'postgres',
     operatorsAliases: false,
