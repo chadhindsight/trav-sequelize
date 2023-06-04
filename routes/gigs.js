@@ -8,7 +8,7 @@ router.get('/', (req, res) => {
     Gig.findAll()
         .then(gigs => {
             console.log(gigs)
-            res.send({ msg: 'Gigass' })
+            res.sendStatus(200)
         })
         .catch(err => console.log(err))
 })
