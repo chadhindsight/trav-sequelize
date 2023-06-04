@@ -1,5 +1,6 @@
 const Sequelize = require('sequelize');
 
+// Establishes connection configurations to the specified db
 module.exports = new Sequelize('codegig', 'me', 'password', {
     host: 'localhost',
     dialect: 'postgres',
